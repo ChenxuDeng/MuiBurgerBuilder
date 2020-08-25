@@ -1,6 +1,6 @@
 
 
-## A Burger builder project built with material-ui and react
+## A Burger builder project built with material-ui, firebase and reactjs.
 
 In the project directory, you can run:
 
