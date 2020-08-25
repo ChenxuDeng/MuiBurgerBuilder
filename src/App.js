@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navigation from "./components/navigation/navigation";
+import {ThemeProvider} from "@material-ui/styles";
+import {theme} from '../src/components/theme/theme'
+import {BrowserRouter,Route,Switch} from "react-router-dom";
+import Burgerbuilder from "./components/burgerbuilder/burgerbuilder";
+import Order from "./components/orderpage/order/order";
+import Auth from "./components/auth/auth";
+import {connect} from 'react-redux'
+import * as action from './store/action/index'
+import React, {Component} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    componentWillMount() {
+        this.props.autoLogin()
+    }
+
+    render() {
+        return (
+                <BrowserRouter>
+                    <ThemeProvider theme={theme}>
+                        <div>
+                            <Navigation/>
+                            <Switch>
+                                <Route path={'/auth'} component={Auth}/>
+                                <Route path={'/orders'} component={Order}/>
+                                <Route path={'/'} component={Burgerbuilder}/>
+                            </Switch>
+                        </div>
+                    </ThemeProvider>
+                </BrowserRouter>
+        );
+    }
 }
 
-export default App;
+const mapDispatchToProps=(dispatch)=>{
+    return{
+        autoLogin:()=>{dispatch(action.autoLogin())}
+    }
+}
+
+export default connect(null,mapDispatchToProps)(App);
+

@@ -1,0 +1,17 @@
+.wrapper {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background: linear-gradient(#F08E4A, #e27b36);
+    text-align: center;
+    margin-top: auto;
+}
+
+.margin{
+    margin-top: 35px;
+}
+
+.font{
+    font-weight: bold;
+}
+
