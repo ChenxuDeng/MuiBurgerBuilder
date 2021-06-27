@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MuiBurgerBuilder/static/css/main.d723e454.chunk.css",
+    "main.js": "/MuiBurgerBuilder/static/js/main.4c650f80.chunk.js",
+    "main.js.map": "/MuiBurgerBuilder/static/js/main.4c650f80.chunk.js.map",
+    "runtime-main.js": "/MuiBurgerBuilder/static/js/runtime-main.80ed2c6b.js",
+    "runtime-main.js.map": "/MuiBurgerBuilder/static/js/runtime-main.80ed2c6b.js.map",
+    "static/js/2.b9fc88cc.chunk.js": "/MuiBurgerBuilder/static/js/2.b9fc88cc.chunk.js",
+    "static/js/2.b9fc88cc.chunk.js.map": "/MuiBurgerBuilder/static/js/2.b9fc88cc.chunk.js.map",
+    "index.html": "/MuiBurgerBuilder/index.html",
+    "precache-manifest.806ab4c239ba0360c77ee942b13b599d.js": "/MuiBurgerBuilder/precache-manifest.806ab4c239ba0360c77ee942b13b599d.js",
+    "service-worker.js": "/MuiBurgerBuilder/service-worker.js",
+    "static/css/main.d723e454.chunk.css.map": "/MuiBurgerBuilder/static/css/main.d723e454.chunk.css.map",
+    "static/js/2.b9fc88cc.chunk.js.LICENSE.txt": "/MuiBurgerBuilder/static/js/2.b9fc88cc.chunk.js.LICENSE.txt",
+    "static/media/27.1 burger-logo.png.png": "/MuiBurgerBuilder/static/media/27.1 burger-logo.png.b8503d26.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80ed2c6b.js",
+    "static/js/2.b9fc88cc.chunk.js",
+    "static/css/main.d723e454.chunk.css",
+    "static/js/main.4c650f80.chunk.js"
+  ]
+}
