@@ -10,11 +10,8 @@ import * as action from './store/action/index'
 import React, {Component} from 'react';
 
 class App extends Component {
-    componentWillMount() {
-        this.props.autoLogin()
-    }
-
     render() {
+        this.props.autoLogin()
         return (
                 <BrowserRouter>
                     <ThemeProvider theme={theme}>
